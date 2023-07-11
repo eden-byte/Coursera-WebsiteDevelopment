@@ -1,0 +1,149 @@
+
+/********** Base styles **********/
+h1 {
+  margin-bottom: 15px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  border: 1px solid black;
+  background-color: #b2a4a4;
+  width: 90%;
+  height: 1000px;
+  height: 200px; 
+  font-family: Helvetica;
+  color: black;
+  box-sizing: 1px;
+  position: relative;
+  top:50px;
+}
+
+.chicken {
+  border: 1px solid black;
+  background-color: #DEB887;
+  float: right;
+  padding: 5px;
+  box-sizing: 1px;
+  font-family: Helvetica;
+  color: black;
+  font-weight:bold;
+}
+
+.beef {
+  border: 1px solid black;
+  background-color: #FF7F50;
+  float: right;
+  padding: 5px;
+  box-sizing: 1px;
+  font-family: Helvetica;
+  color: black;
+  font-weight:bold;
+}
+
+.sushi {
+  border: 1px solid black;
+  background-color: #00FFFF;
+  float: right;
+  padding: 5px;
+  box-sizing: 1px;
+  font-family: Helvetica;
+  color: black;
+  font-weight:bold;
+}
+/* Simple Responsive Framework. */
+.row {
+    width: 100%;
+  }
+  #header-nav {
+    background-color: #dd7de2;
+    opacity: .75;
+    border-radius: 0;
+    border: 0;
+  }
+  .navbar-brand {
+    padding-top: 15 px;
+  }
+  .navbar-brand { /* Restaurant name */
+    font-family: Helvetica;
+    color:#0000;
+    font-weight:bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .65;
+  }
+  
+  /********** Large devices only **********/
+  @media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3{
+      float: left;
+    }
+    .col-lg-1 {
+      width: 100%;
+    }
+    .col-lg-2 {
+      width: 100%;
+    }
+    .col-lg-3 {
+      width: 100%;
+    }
+    
+  }
+  
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2{
+      float: left;
+    }
+    .col-md-1 {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .col-md-2 {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  /********** Small devices only **********/
+  @media (max-width: 767px) {
+    .col-sm-12{
+      float: left;
+      width: 100%;
+    }
+    .navbar-brand {
+      padding-top: 10px;
+      height: 80px;
+      text-align: right;
+    }
+  }
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    /* Header */
+    .navbar-brand {
+      padding-top: 10px;
+      height: 80px;
+      margin-right: 250px;
+    }
+    .navbar-brand a:hover, .navbar-brand a:focus {
+        text-decoration: none;
+        width:100%;
+      }
+      .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+        border: 1px solid #61122f;
+        width:100%;
+      }
+      .navbar-header button.navbar-toggle {
+        clear: both;
+        width:100%;
+      }
+  }
